@@ -132,6 +132,6 @@ Example code is [MIT licensed](LICENSE). The model retains its original CC0 1.0 
 
 - **RobotExpressive**, by [Tomás Laulhé / Quaternius](https://www.patreon.com/quaternius), with modifications by [Don McCurdy](https://donmccurdy.com/) (facial morph targets, FBX2GLTF conversion, material cleanup).
 - [Three.js model and attribution](https://github.com/mrdoob/three.js/tree/f2b6a71bdd088d9da387fcc62802323341099b92/examples/models/gltf/RobotExpressive).
-- [Pinned production asset](https://landofassets.com/BenHouston3D/three/robotexpressive).
+- [Pinned production asset](https://landofassets.com/BenHouston3D/three/assets/robotexpressive@1.0.0).
 
 No model binaries are committed here. The selected production asset matches the RobotExpressive GLB in the Three.js examples.
