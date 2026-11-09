@@ -1,0 +1,154 @@
+:root {
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+  color: #2c382f;
+  background: #f5f2e9;
+  font-synthesis: none;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+main {
+  max-width: 1500px;
+  margin: auto;
+  min-height: 100vh;
+  position: relative;
+  padding: 32px 5vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr auto auto;
+}
+header {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #d8dace;
+  font-size: 12px;
+  letter-spacing: 0.09em;
+}
+a {
+  color: inherit;
+  text-underline-offset: 4px;
+}
+header a {
+  font-weight: 700;
+  text-decoration: none;
+}
+header span {
+  color: #737e70;
+}
+.intro {
+  padding-top: 12vh;
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
+}
+.eyebrow {
+  color: #618764;
+  font-size: 11px;
+  letter-spacing: 0.19em;
+  font-weight: 700;
+}
+h1 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(42px, 5.5vw, 82px);
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: -0.065em;
+  margin: 22px 0;
+}
+.intro > p:last-child {
+  max-width: 350px;
+  line-height: 1.7;
+  color: #73806e;
+  font-size: 15px;
+}
+#viewport {
+  grid-column: 2;
+  grid-row: 2 / 4;
+  min-height: 540px;
+  height: 70vh;
+  background: radial-gradient(ellipse at center, #e4e9d9, transparent 68%);
+}
+canvas {
+  display: block;
+  touch-action: none;
+}
+aside {
+  grid-column: 1;
+  align-self: end;
+  max-width: 450px;
+  font-size: 12px;
+  line-height: 1.6;
+  padding: 28px 0 40px;
+}
+#status {
+  font-weight: 700;
+}
+#status[data-state="ready"] {
+  color: #397749;
+}
+#status[data-state="error"] {
+  color: #b82d26;
+}
+#gpu,
+#asset-source {
+  color: #7b8578;
+  overflow-wrap: anywhere;
+  font-family: monospace;
+  font-size: 10px;
+}
+button {
+  background: #355d40;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  font: inherit;
+  padding: 10px 18px;
+  cursor: pointer;
+  margin: 12px 0 0;
+}
+button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+.hint {
+  color: #89917e;
+  font-size: 11px;
+}
+footer {
+  grid-column: 1 / -1;
+  border-top: 1px solid #d8dace;
+  color: #7b8578;
+  padding-top: 20px;
+  font-size: 11px;
+}
+@media (max-width: 720px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    padding: 22px;
+  }
+  header span {
+    font-size: 9px;
+  }
+  .intro {
+    padding-top: 40px;
+  }
+  h1 {
+    font-size: 48px;
+  }
+  #viewport {
+    height: 440px;
+    min-height: 0;
+    margin-top: -25px;
+  }
+  aside {
+    align-self: stretch;
+    padding: 0 0 24px;
+  }
+}

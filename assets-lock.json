@@ -1,0 +1,20 @@
+{
+  "lockfileVersion": 1,
+  "importers": {
+    ".": {
+      "name": "loa-examples",
+      "assets": {
+        "robot": {
+          "kind": "loa",
+          "specifier": "BenHouston3D/three/robotexpressive@1.0.0",
+          "host": "https://api.landofassets.com",
+          "ref": "BenHouston3D/three/robotexpressive",
+          "version": "1.0.0",
+          "hash": "sha256-BH9eX7O7bTeL0d8WymE38qWWyZs6G1aQtAIMBar28xk=",
+          "remoteUrl": "https://api.landofassets.com/files/047f5e5fb3bb6d378bd1df16ca6137f2a596c99b3a1b5690b4020c05aaf6f319",
+          "extension": ".glb"
+        }
+      }
+    }
+  }
+}
