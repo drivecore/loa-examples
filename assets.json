@@ -1,0 +1,6 @@
+{
+  "name": "loa-examples",
+  "assets": {
+    "robot": "BenHouston3D/three/robotexpressive@1.0.0"
+  }
+}

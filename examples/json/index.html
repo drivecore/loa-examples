@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LoA × Three.js · JSON resolution</title>
+    <link rel="stylesheet" href="./shared/style.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "./vendor/three/three.module.js",
+          "three/addons/": "./vendor/three/addons/",
+          "@landofassets/runtime": "./vendor/loa/index.js",
+          "example-scene": "./shared/scene.js"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <a href="https://landofassets.com">LAND OF ASSETS</a><span>Three.js examples / 01</span>
+      </header>
+      <section class="intro">
+        <p class="eyebrow">JSON RESOLUTION</p>
+        <h1>One robot.<br />Pinned in the cloud.</h1>
+        <p>A plain JavaScript scene, a small URL map, and a public asset from Land of Assets.</p>
+      </section>
+      <div id="viewport" aria-label="Interactive 3D robot"></div>
+      <aside>
+        <p id="status" role="status">Loading resolution map…</p>
+        <p id="gpu"></p>
+        <p id="asset-source"></p>
+        <button id="animate" disabled>Pause animation</button>
+        <p class="hint">Drag to orbit · Scroll to zoom</p>
+      </aside>
+      <footer>
+        RobotExpressive by Tomás Laulhé / Quaternius · CC0 ·
+        <a href="https://github.com/drivecore/loa-examples">Source & setup</a>
+      </footer>
+    </main>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

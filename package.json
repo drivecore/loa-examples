@@ -1,0 +1,39 @@
+{
+  "name": "loa-examples",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Official Three.js examples for Land of Assets production asset resolution",
+  "license": "MIT",
+  "repository": "github:drivecore/loa-examples",
+  "type": "module",
+  "scripts": {
+    "loa": "node scripts/loa.mjs",
+    "assets:resolve": "node scripts/loa.mjs resolve --output examples/json/asset-resolution.json",
+    "assets:pull": "node scripts/loa.mjs pull --frozen-lockfile",
+    "dev:json": "node scripts/json.mjs serve",
+    "dev:vite": "vite --config examples/vite/vite.config.js --host 127.0.0.1",
+    "dev:vite:local": "vite --config examples/vite/vite.config.js --mode offline --host 127.0.0.1",
+    "build:json": "npm run assets:resolve -- --mode remote && node scripts/json.mjs build",
+    "build:vite": "vite build --config examples/vite/vite.config.js",
+    "build:vite:local": "vite build --config examples/vite/vite.config.js --mode offline",
+    "build": "npm run build:json && npm run build:vite && npm run build:vite:local",
+    "test": "node --test --test-concurrency=1 tests/*.test.mjs",
+    "test:production": "node --test tests/production.test.mjs",
+    "check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@landofassets/runtime": "3.2.0",
+    "@landofassets/sdk": "3.2.0",
+    "three": "0.187.0"
+  },
+  "devDependencies": {
+    "@landofassets/cli": "3.2.0",
+    "@types/node": "26.6.6",
+    "@types/three": "0.187.0",
+    "typescript": "7.0.2",
+    "vite": "8.3.6"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}
